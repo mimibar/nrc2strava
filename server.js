@@ -97,7 +97,7 @@ const buildGpx = data => {
         time: getISODate(data.start_epoch_ms)
       },
       trk: {
-        name: `${day} run - NRC`,
+        name: data.tags['com.nike.name'],
         type: 9
       }
     }
